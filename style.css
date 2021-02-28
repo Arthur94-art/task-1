@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.ukraine{
+	background: linear-gradient(to bottom, blue 50%, yellow 50%);
+	height: 200px;
+	max-width: 300px;
+	width: 100%;
+	margin: 10px;
+}
+.japan{
+	height: 200px;
+	max-width: 300px;
+	width: 100%;
+	margin: 10px;
+	border: 0.1px solid #000;
+}
+.circle{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: red;
+}
+.island{
+	height: 200px;
+	max-width: 300px;
+	width: 100%;
+	margin: 10px;
+	border: 0.1px solid #000;
+	display: flex;
+	background-color: blue;
+	position: relative;
+}
+.vert__line-white{
+	left: 30%;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 50px;
+	background-color: #fff;
+	display: table;
+	position: absolute;
+
+}
+.vert__line-white::after{
+	display: flex;
+	content: '';
+	border-left: 30px solid red;
+	max-height: 200px;
+	height: 100%;
+	margin-left: 10px;
+	position: absolute;
+	z-index: 10;
+}
+.hor__line-white{
+	left: 0;
+	right: 0;
+	top: 75px;
+	height: 50px;
+	width: auto;
+	background-color: #fff;
+	position: absolute;
+}
+.hor__line-white::after{
+	display: flex;
+	content: '';
+	border-bottom: 30px solid red;
+	max-width: 300px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.czech{
+	height: 200px;
+	max-width: 300px;
+	width: 100%;
+	margin: 10px;
+	border: 0.1px solid #000;
+	background: linear-gradient(to bottom,
+		 white 50%,
+		 red 50%);
+}
+.czech::after {
+	display: flex;
+	content: "";
+	border-left: 150px solid blue;
+	border-top: 100px solid #fff;
+	border-bottom: 100px solid red;
+}
+
+
+
